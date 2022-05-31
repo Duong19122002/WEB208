@@ -1,41 +1,61 @@
-<h1>{{ componentName }}</h1> 
-<button (click)="onHandleClick()">Click</button>
-<input type="text" [(ngModel)]="productName" />
-{{ productName }}
-
-<div *ngIf="isStatus">
-  <table class="table table-bordered">
+<!-- <table class="table table-bordererd">
     <thead>
       <tr>
         <th>#</th>
-        <th>Tên sản phẩm</th>
-        <th>Giá sản phẩm</th>
-        <th>Trạng thái</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Status</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let product of productList; let i = index">
+      <tr *ngFor="let product of products; let i = index">
         <td>{{ i + 1 }}</td>
         <td>{{ product.name }}</td>
         <td>{{ product.price }}</td>
-        <td>{{ product.status ? "Còn hàng" : "Hết hàng" }}</td>
+        <td>{{ product.status ? "Còn hàng" : "hết hàng" }}</td>
         <td>
-          <button class="btn btn-danger" (click)="onHandleDelete(product.id)">
+          <button class="btn btn-danger" (click)="onHandleRemove(product.id!)">
             Delete
           </button>
+          <button class="btn btn-primary ms-1" routerLink="/product/edit/{{ product.id }}">
+            Edit
+        </button>
+        <button class="btn btn-primary ms-1" routerLink="/product/{{ product.id }}">
+          chi tiết
+      </button>
         </td>
       </tr>
     </tbody>
-  </table>
-</div>
-<!-- 
-    B1: - Sử dụng module FormsModule trong file app.module.ts
-          import { FormsModule } from '@angular/forms'
-        - sử dụng
-            imports: [FormsModule]
-    B2: Khai báo thuộc tính productName: string = "";
-    B3: ngoài mặt view:
-        <input type="text" [(ngModel)]="productName" />
-        {{ productName }}
- -->
+  </table> -->
+  <nz-table #basicTable>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.status ? "Còn hàng" : "hết hàng" }}</td>
+        <td>
+          <td>
+            <button class="btn btn-danger" (click)="onHandleRemove(product.id!)">
+              Delete
+            </button>
+            <button class="btn btn-primary ms-1" routerLink="/product/edit/{{ product.id }}">
+              Edit
+          </button>
+          <button class="btn btn-primary ms-1" routerLink="/product/{{ product.id }}">
+            chi tiết
+        </button>
+          </td>
+      </tr>
+    </tbody>
+  </nz-table>
+  

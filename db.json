@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "name": "Duongw",
+      "price": 19122002,
+      "status": true,
+      "id": 2
+    },
+    {
+      "name": "product A",
+      "price": 1232132131,
+      "status": true,
+      "id": 3
+    },
+    {
+      "name": "12321321",
+      "price": 321313131,
+      "status": true,
+      "id": 4
+    },
+    {
+      "name": "PRoduct C",
+      "price": 123321312312,
+      "status": true,
+      "id": 5
+    },
+    {
+      "name": "DuongWEB",
+      "price": 0,
+      "status": true,
+      "id": 6
+    },
+    {
+      "name": "DuongWEB",
+      "price": 1000,
+      "status": true,
+      "id": 7
+    }
+  ]
+}
