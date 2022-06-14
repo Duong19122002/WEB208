@@ -1,40 +1,26 @@
 {
   "products": [
     {
-      "name": "Duongw",
-      "price": 19122002,
+      "name": "Nguyễn Ngọc Dương",
+      "title": "Dương tới rồi nè",
+      "price": 2020,
       "status": true,
-      "id": 2
+      "id": 1,
+      "desc": "The DESC command is used to sort the data returned in descending order. The following SQL statement selects all the columns from the \"Customers\" table, sorted ...",
+      "img": "https://vcdn1-dulich.vnecdn.net/2021/07/16/8-1626444967.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=GfgGn4dNuKZexy1BGkAUNA",
+      "img2": "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2021/5/26/913299/Ngan-Ha25.jpg",
+      "img3": "https://img.websosanh.vn/v2/users/review/images/4wvuq0i4ozs1q.jpg?compress=85"
     },
     {
-      "name": "product A",
-      "price": 1232132131,
+      "name": "Vibrant Portraits of 2020",
+      "title": "Vibrant Portraits of 2020 neeeeeee",
+      "price": 2022,
       "status": true,
-      "id": 3
-    },
-    {
-      "name": "12321321",
-      "price": 321313131,
-      "status": true,
-      "id": 4
-    },
-    {
-      "name": "PRoduct C",
-      "price": 123321312312,
-      "status": true,
-      "id": 5
-    },
-    {
-      "name": "DuongWEB",
-      "price": 0,
-      "status": true,
-      "id": 6
-    },
-    {
-      "name": "DuongWEB",
-      "price": 1000,
-      "status": true,
-      "id": 7
+      "id": 2,
+      "desc": "The DESC command is used to sort the data returned in descending order. The following SQL statement selects all the columns from the \"Customers\" table, sorted ...",
+      "img": "https://baoquocte.vn/stores/news_dataimages/phamthuan/112020/26/11/in_article/ngam-tron-bo-anh-tuyet-dep-ve-da-dang-van-hoa-cua-viet-nam.jpg?rt=20201126113518",
+      "img2": "https://d1hjkbq40fs2x4.cloudfront.net/2020-01-09/files/canon-landscape-photography-preparation-tips_1968-1s.jpg",
+      "img3": "https://cdnimg.vietnamplus.vn/uploaded/bokttj/2022_03_10/aldrin_apollo.jpg"
     }
   ]
 }

@@ -48,7 +48,7 @@
     }
     /* Recent-posst */
     .recent-post {
-      @apply bg-[#fff] border-b py-5 ;
+      @apply bg-[#fff]  py-5 ;
     }
     .recent-post__item {
       @apply bg-[#fff] p-5;
@@ -63,7 +63,7 @@
     .projects {
     }
     .project__item {
-      @apply border-b py-5 grid md:grid-cols-[246px,auto] gap-4;
+      @apply border-b py-5  grid md:grid-cols-[246px,auto] gap-4;
     }
     .project__img {
       @apply shadow-lg;

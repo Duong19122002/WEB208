@@ -11,12 +11,12 @@
     .category{
         @apply h-8
     }
+    ul li a{
+      @apply text-[20px] font-bold leading-[20px]
+    }
     /* Banner */
     .banner {
       @apply py-10 md:py-20;
-    }
-    ul li a{
-      @apply text-[20px] font-bold leading-[20px]
     }
     .banner-content {
       @apply order-2 text-center md:order-1 md:col-span-2  md:text-left;
@@ -44,11 +44,11 @@
       @apply flex justify-between items-center py-5;
     }
     .seciton-header__title {
-      @apply text-[44px] font-bold leading-[20px] text-[#21243D];
+      @apply text-[22px];
     }
     /* Recent-posst */
     .recent-post {
-      @apply bg-[#fff] border-b py-5 ;
+      @apply bg-[#EDF7FA] py-5;
     }
     .recent-post__item {
       @apply bg-[#fff] p-5;
@@ -82,8 +82,5 @@
     }
     .project__meta {
       @apply flex space-x-4 py-5;
-    }
-    .foter{
-      @apply flex justify-center
     }
 }

@@ -13,9 +13,14 @@ export class ProductAddComponent implements OnInit {
   // @Output() createProduct = new EventEmitter<{ name: string, price: number }>();
   product: IProduct = {
     name: "",
+    title:"",
     price: 0,
     status: true,
-    id: 0
+    id: 0,
+    desc:"",
+    img:"",
+    img2:"",
+    img3:""
   }
   constructor(
     private productService: ProductService,

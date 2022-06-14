@@ -5,7 +5,21 @@
     type="text"
     placeholder="Name"
     [(ngModel)]="product.name"
+    #name="ngModel"
     name="name"
+    required
+    minlength="5"
+  />
+  <div *ngIf="name.invalid && (name.dirty || name.touched)"
+    class="alert">
+  <div *ngIf="name.errors?.['required']">Nhap ten</div>
+  <div *ngIf="name.errors?.['minlength']">Nhap du ten</div>
+  </div>
+  <input nz-input
+  type="text"
+  placeholder="title"
+  [(ngModel)]="product.title"
+  name="title"
   />
   <input nz-input
     type="number"
@@ -13,7 +27,33 @@
     [(ngModel)]="product.price"
     name="price"
   />
-  <button>Add</button>
+  <input nz-input
+  type="text"
+  placeholder="Desc"
+  [(ngModel)]="product.desc"
+  name="desc"
+  />
+  <input
+   type="text"
+   placeholder="Img"
+   [(ngModel)]="product.img"
+   name="img"
+   />
+   <input
+   type="text"
+   placeholder="Img2"
+   [(ngModel)]="product.img2"
+   name="img2"
+   />
+   <input
+   type="text"
+   placeholder="Img"
+   [(ngModel)]="product.img3"
+   name="img3"
+   />
+  <button >Add</button>
+  <!-- [disabled]="!addProduct.valid" -->
+  
 </form>
 
 

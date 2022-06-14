@@ -84,6 +84,6 @@
       @apply flex space-x-4 py-5;
     }
     .foter{
-      @apply flex justify-center
+      @apply flex justify-center;
     }
 }

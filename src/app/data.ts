@@ -2,14 +2,14 @@ const data = [
     {
         id: 1,
         name: "product A",
+        title:"hahhaaa",
         price: 200,
-        status: false
+        status: false,
+        desc:"aaaaaa",
+        img:"dddddd",
+        img2:"hahahaa",
+        img3:"hahahaa"
     },
-    {
-        id: 2,
-        name: "product B",
-        price: 300,
-        status: true
-    }
+
 ];
 export default data;

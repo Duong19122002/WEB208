@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,54 +29,58 @@
           <div class="flex justify-end">
             <ul class="hidden md:flex space-x-4">
               <li><a href="/blog">Blog</a></li>
-              <li><a href="/product">Work</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="/work">Work</a></li>
+              <li><a href="">menu 3</a></li>
+              <li><a href="">menu 4</a></li>
             </ul>
           </div>
         </div>
       </div>
     </header>
-    <section class="recent-post">
+    <!--End .banner-->
+    <section class="projects">
       <div class="custom-container">
         <div class="seciton-header">
+          <h1 class="seciton-header__title">WORK</h1>
         </div>
         <div class="section-body">
-          <div class="grid md:grid-cols-1 gap-8">
-            <div class="recent-post__item">
-              <h1 class="recent-post__title">
-               {{product.title}}
-              </h1>
-              <div class="recent-post__meta">
-                <span class="project__createat">{{product.price}}</span>
-                <a href="">Design, Pattern</a>
-              </div>
-              <p class="recent-post__desc">
-               {{product.desc}}
-              </p>
-              <div class="recent-img">
-                <img src="{{product.img}}" alt="">
-              </div>
-              <h1 class="recent-post__name">
-                {{product.name}}
-               </h1>
-               <h2 class="recent-post__name2">
-                {{product.name}}
-               </h2>
-               <p class="recent-post__desc">
-                {{product.desc}}
-               </p>
-               <div class="recent-img">
-                <img src="{{product.img2}}" alt="">
-              </div>
-              <div class="recent-img">
-                <img src="{{product.img3}}" alt="">
-              </div>
+          <tr *ngFor="let product of products; let i = index">
+          <div class="project__item grid md:grid-cols-[246px,auto] gap-4">
+            <div class="project__img">
+              <img
+                src="{{product.img}}"
+                alt=""
+                class="project__thumbnail"
+              />
             </div>
-            
+            <div class="project__content">
+              <h3 class="project__name">{{product.name}}</h3>
+              <div class="project__meta">
+                <span class="project__createat">{{product.price}}</span>
+                <a href="" class="project__category">Dashboard</a>
+              </div>
+              <p>
+                {{product.desc}}
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-   
+    <footer >
+      <div class="custom-container">
+        <div class="py-5">
+          <div class="foter flex justify-content:space-around">
+            <div class="hidden md:flex space-x-4">
+              <img src="https://img.icons8.com/ios-glyphs/30/undefined/facebook-new.png"/>
+              <img src="https://img.icons8.com/material-outlined/30/undefined/instagram-new--v1.png"/>
+              <img src="https://img.icons8.com/ios-glyphs/30/undefined/twitter--v1.png"/>
+              <img src="https://img.icons8.com/ios-glyphs/30/undefined/linkedin-circled--v1.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
+           

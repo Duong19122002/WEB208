@@ -1,11 +1,13 @@
-<!-- <table class="table table-bordererd">
+
+  <!-- <nz-table #basicTable>
     <thead>
       <tr>
         <th>#</th>
         <th>Name</th>
         <th>Price</th>
         <th>Status</th>
-        <th></th>
+        <th>Img</th>
+        <th>Desc</th>
       </tr>
     </thead>
     <tbody>
@@ -14,48 +16,105 @@
         <td>{{ product.name }}</td>
         <td>{{ product.price }}</td>
         <td>{{ product.status ? "Còn hàng" : "hết hàng" }}</td>
-        <td>
-          <button class="btn btn-danger" (click)="onHandleRemove(product.id!)">
-            Delete
-          </button>
-          <button class="btn btn-primary ms-1" routerLink="/product/edit/{{ product.id }}">
-            Edit
-        </button>
-        <button class="btn btn-primary ms-1" routerLink="/product/{{ product.id }}">
-          chi tiết
-      </button>
-        </td>
-      </tr>
-    </tbody>
-  </table> -->
-  <nz-table #basicTable>
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let product of products; let i = index">
-        <td>{{ i + 1 }}</td>
-        <td>{{ product.name }}</td>
-        <td>{{ product.price }}</td>
-        <td>{{ product.status ? "Còn hàng" : "hết hàng" }}</td>
+        <td><img src="{{product.img}}"></td>
+        <td>{{product.desc}}</td>
         <td>
           <td>
             <button class="btn btn-danger" (click)="onHandleRemove(product.id!)">
-              Delete
+              Xóa
             </button>
             <button class="btn btn-primary ms-1" routerLink="/product/edit/{{ product.id }}">
-              Edit
+              Sửa
           </button>
           <button class="btn btn-primary ms-1" routerLink="/product/{{ product.id }}">
-            chi tiết
+            Chi tiết
         </button>
           </td>
       </tr>
     </tbody>
   </nz-table>
-  
+   -->
+   
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style type="text/tailwindcss">
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="custom-container">
+        <div class="py-5">
+          <div class="flex justify-end items-center">
+            <button id="btn-mobile" class="md:hidden">
+             <img class="category" src="https://cdn-icons.flaticon.com/png/512/2976/premium/2976215.png?token=exp=1654777907~hmac=e58b02162ae53acfef9f606e6c9ca2f3" alt="">
+            </button>
+          </div>
+          <div class="flex justify-end">
+            <ul class="hidden md:flex space-x-4">
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/product">Work</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--End .banner-->
+    <section class="projects">
+      <div class="custom-container">
+        <div class="seciton-header">
+          <h1 class="seciton-header__title">WORK</h1>
+        </div>
+        <div class="section-body">
+          <tr *ngFor="let product of products; let i = index">
+          <div class="project__item grid md:grid-cols-[246px,auto] gap-4">
+            <div class="project__img">
+              <img
+                src="{{product.img}}"
+                alt=""
+                class="project__thumbnail"
+              />
+            </div>
+            <div class="project__content">
+              <h3 class="project__name" routerLink="/product/{{ product.id }}">{{product.name}}</h3>
+              <div class="project__meta">
+                <span class="project__createat">{{product.price}}</span>
+                <a href="" class="project__category">Dashboard</a>
+              </div>
+              <p>
+                {{product.desc}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer >
+      <div class="custom-container">
+        <div class="py-5">
+          <div class="foter flex justify-content:space-around">
+            <div class="hidden md:flex space-x-4">
+              <img src="https://img.icons8.com/ios-glyphs/30/undefined/facebook-new.png"/>
+              <img src="https://img.icons8.com/material-outlined/30/undefined/instagram-new--v1.png"/>
+              <img src="https://img.icons8.com/ios-glyphs/30/undefined/twitter--v1.png"/>
+              <img src="https://img.icons8.com/ios-glyphs/30/undefined/linkedin-circled--v1.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
