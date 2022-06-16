@@ -12,33 +12,10 @@
         @apply h-8
     }
     /* Banner */
-    .banner {
-      @apply py-10 md:py-20;
-    }
     ul li a{
       @apply text-[20px] font-bold leading-[20px]
     }
-    .banner-content {
-      @apply order-2 text-center md:order-1 md:col-span-2  md:text-left;
-    }
-    .banner-content__title {
-      @apply text-[44px] leading-[60px] font-bold;
-    }
-    .banner-content__desc {
-      @apply text-base my-5;
-    }
-    .banner-picture {
-      @apply order-1 md:order-2;
-    }
-    .banner-picture__thumb {
-      @apply rounded-full h-60 mx-auto md:ml-auto md:mr-0;
-    }
-    .btn {
-      @apply inline-block py-5 px-10 text-white rounded;
-    }
-    .btn-danger {
-      @apply bg-red-500;
-    }
+  
     /* Section */
     .seciton-header {
       @apply flex justify-between items-center py-5;
@@ -47,18 +24,6 @@
       @apply text-[44px] font-bold leading-[20px] text-[#21243D];
     }
     /* Recent-posst */
-    .recent-post {
-      @apply bg-[#fff] border-b py-5 ;
-    }
-    .recent-post__item {
-      @apply bg-[#fff] p-5;
-    }
-    .recent-post__title {
-      @apply text-[26px] font-bold;
-    }
-    .recent-post__meta {
-      @apply flex items-center py-5 space-x-4;
-    }
     /* Project */
     .projects {
     }

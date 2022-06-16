@@ -15,7 +15,14 @@
     ul li a{
       @apply text-[20px] font-bold leading-[20px]
     }
-    
+    /* Section */
+    .seciton-header {
+      @apply flex justify-between items-center py-5;
+    }
+    .seciton-header__title {
+      @apply text-[44px] font-bold leading-[20px] text-[#21243D];
+    }
+    /* Recent-posst */
     .recent-post {
       @apply bg-[#fff]  py-5 ;
     }
